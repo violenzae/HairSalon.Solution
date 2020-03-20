@@ -8,13 +8,18 @@
   {
     <h3>No clients have been added yet!</h3>
   } 
+
+  else
+  {
   <ul>
     @foreach(Client client in Model)
     {
         <li>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId }) | @client.Stylist.Name</li>
     }
-
+    </ul>
+    <p>@Html.ActionLink("Add new client", "Create")</p>
+  }
     <hr/>
 
     <p>@Html.ActionLink("Home", "Index", "Home")</p>
-  </ul>
+  

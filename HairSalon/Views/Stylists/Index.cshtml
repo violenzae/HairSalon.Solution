@@ -8,10 +8,14 @@
   {
     <h3>No stylists have been added yet!</h3>
   } 
+  else
+  {
     @foreach(Stylist stylist in Model)
     {
         <p>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</p>
     }
+    <p>@Html.ActionLink("Add new client", "Create", "Clients")</p>
+  }
 
     <hr/>
 
