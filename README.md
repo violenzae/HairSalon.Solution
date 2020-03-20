@@ -8,6 +8,20 @@
 
 _This is a SQL database/C#-based web application that has an HTML UI. The user comes to a splash page which prompts them to add a stylist, or view existing sylists and clients. Then they can choose to add clients to individual stylists, and further drill down into individual client and stylist details. It uses ASP.NET MVC, shared layouts, static files, branching logic, classes, methods, HTML helpers and auto-implemented properties._
 
+## Specifications:
+
+| Specification | Example Input | Example Output |
+| ------------- |:-------------:| -------------------:|
+|User can can choose to add a new stylist with a description| "Tasha", "description"| "Tasha" is added to the stylist database with entered "description"|
+|User can view all stylists|Selects "view all"|All stylists in the stylist table of the database are printed to the page|
+|User can view all clients of each stylist|Clicks "Tasha"|All clients that work with "Tasha" are displayed.|
+|User can edit added stylists|"Tasha" --> "Tasha B"|"Tasha" is updated to "Tasha B" in the stylist table|
+|User can delete stylists|User selects "Delete" from options on "Tasha B" Details page|"Tasha B" is removed from the stylists table.|
+|User can add a new client and specify which stylist it belongs to, as well as other client details.|"Barbara", "Tasha B"|"Barbara" is added to the clients table, with the id of the specified stylist in a stylist column.|
+|User can view all clients|Selects "view all"|User can see all clients listed in the clients table.|
+|User can edit clients|"Barbara" --> "Barb"|"Barbara" is updated to "Barb" in the restaraunt table.|
+|User can delete clients|User selects "Delete"|The row with "Barb" is removed from the clients table.|
+
 ## Setup/Installation Requirements
 
 
