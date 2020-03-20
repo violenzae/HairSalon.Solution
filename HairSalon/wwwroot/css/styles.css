@@ -1,0 +1,35 @@
+.navbar-brand{
+
+font-size: larger;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  text-align: center;
+  background: url('../img/rainbow.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel{
+  margin: 5%;
+  padding: 5%;
+  background-color: rgb(223, 67, 67);
+  width: 80%;
+  display: inline-block;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+ul { 
+  text-align: center; 
+  list-style-position: inside; 
+}
