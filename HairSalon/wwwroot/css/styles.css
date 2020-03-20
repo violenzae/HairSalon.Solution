@@ -1,7 +1,7 @@
 .navbar-brand{
 
 font-size: larger;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -11,10 +11,10 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .panel{
-  margin: 5%;
   padding: 5%;
   background-color: rgb(223, 67, 67);
   width: 80%;
@@ -32,4 +32,8 @@ a:hover {
 ul { 
   text-align: center; 
   list-style-position: inside; 
+}
+
+#hair {
+  width: 15%;
 }
