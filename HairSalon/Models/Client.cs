@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace HairSalon
+namespace HairSalon.Models
 {
   public class Client
   {
