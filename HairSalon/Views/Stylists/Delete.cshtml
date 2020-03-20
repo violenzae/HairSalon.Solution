@@ -1,0 +1,9 @@
+@model HairSalon.Models.Stylist
+
+  <h2>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h2>
+  @using (Html.BeginForm())
+  {
+      <button class="btn btn-light" type="submit">YES</button>
+  }
+  <br>
+  @Html.ActionLink("Back to List", "Index")
