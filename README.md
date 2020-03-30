@@ -29,7 +29,8 @@ _This is a SQL database/C#-based web application that has an HTML UI. The user c
 * _Install .NET Core SDK_
 * _Install MySQL and start and login to a local server._
 * _Recreate the database and tables by entering the following commands:_
-  * CREATE DATABASE `rachel_schieferstein`;
+  * _CREATE DATABASE `rachel_schieferstein`_;
+  * _USE rachel_schieferstein;_
   * CREATE TABLE `clients` (`ClientId` bigint unsigned NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,`StylistId` int DEFAULT '0',`Service` varchar(255) DEFAULT NULL, PRIMARY KEY (`ClientId`), UNIQUE KEY `ClientId` (`ClientId`));
   *  CREATE TABLE `stylists` (`StylistId` bigint unsigned NOT NULL AUTO_INCREMENT,`Name` varchar(255) DEFAULT NULL,`Description` varchar(255) DEFAULT NULL, PRIMARY KEY (`StylistId`), UNIQUE KEY `StylistId` (`StylistId`));
